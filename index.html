@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <!-- head tag is for the content which is not to be shown to the user, which includes title and metadaata. -->
+  <head>
+    <title>Welcome to html course.</title>
+    <meta charset="utf-8" /> <!-- 'utf-8' is the universal character thet includes pretty much every character from any human language which means your webpage will be able to handle any language.-->
+    <meta name="author" content="Rishabh"/>
+    <meta name="description" content="This webpage aims to provide complete beginners information about 
+    HTML elements and attributes"/> <!-- It is most commonly for 'SEO' optimisations.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- This ensures your webpage width adapts to the device viewport and sets the initial scale.-->
+  </head>
+  <!-- We also have 'script' and 'style' tags which are for 'Javascript' and 'CSS' respectively.-->
+  <!-- body tag is for the content which is not to be shown to the user. -->
+  <body>
+    Welcome to HTML.
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>This is a paragraph</p><!-- This is a block of test unlike heading.-->
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia magni
+      obcaecati doloribus dolores sed eum officiis dolore, laboriosam dolorem
+      pariatur iusto reprehenderit qui, suscipit reiciendis. Voluptas fugiat
+      quod harum ea?
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia magni
+        obcaecati doloribus dolores sed eum officiis dolore, laboriosam dolorem
+        pariatur iusto reprehenderit qui, suscipit reiciendis. Voluptas fugiat
+        quod harum ea?
+      </p> 
+      <hr><!-- Horizontal rule-->
+      <!-- Html dosent allow line spaces so if you add a space it will remove by itself, so in order to add a space use <br> tag.-->
+      <p>
+        <strong>Lorem ipsum,</strong> <!-- Strong tag is to add importance to the text, in sense will make it bold, can be replaced by <b></b> {bold  tag}  .--> dolor sit amet consectetur adipisicing elit. Quia magni
+        <br /> <!-- Forward slash is optional here. -->
+        <em>bcaecati doloribus</em><!-- em tag is to lay emphasis on certain text, can be replaced by <i></i> {italics tag} -->dolores sed eum officiis dolore, laboriosam dolorem
+        <br> 
+        <mark> pariatur iusto</mark> <!-- It is for highlighting text, like in a book. --> reprehenderit qui, suscipit reiciendis. Voluptas fugiat
+        <del>quod harum ea?</del> <!-- For strikethrough is this delete tag.-->
+      </p> 
+      <p>
+        Lorem ipsum, <sub>dolor sit</sub> <!-- For subscripts--> <sup>amet consectetur</sup> <!-- For superscripts--> adipisicing elit. Quia magni
+        <ins>obcaecati doloribus</ins> <!-- For underlining text, this insert tag.--> dolores sed eum officiis dolore, laboriosam dolorem
+        <small>pariatur iusto reprehenderit qui,</small> <!-- Used for smaller tags.-->suscipit reiciendis. Voluptas fugiat
+        quod harum ea?
+      </p>
+      <!-- Two default display values in html 1. Blocl, 2. Inline -- Block level starts with the line and takes all the width 
+      available, where inline does not start on a new line and takes only takes as much width as necessary.-->
+      <div>Block 1</div>
+      <div>Block 2</div> <!-- div tag is a block level element.-->
+      <span>Inline 1</span> <!-- span tag is a inline level element.-->
+      <span>Inline 2</span>
+
+      <!-- Now talking of lists we have unordered and ordered lists-->
+      <!-- Unordered lists where order dosent matter, it is done with two tags, one is <ul> to define unordered list 
+      and another is <li> for every item of the list.-->
+      <ul> <!-- By default we have bullet points-->
+          <li>Bread</li>
+          <li>Eggs</li>
+          <li>Milk</li>
+      </ul>
+      <ol> <!-- By default we have bullet points-->
+        <li>Pen</li>
+        <li>Paper</li>
+        <li>Book</li>
+    </ol>
+    <!-- Now last is definition list we displays with the description, it uses three tags <dl> main tag, then we 
+    we have <dt> for title and <dd> for description-->
+    <dl>
+        <dt>IceCream</dt>
+        <dd>A cold frozen food.</dd>
+        <dt>Tea</dt>
+        <dd>A hot drink. </dd>
+    </dl>
+    <!-- Next HTML attributes which provide extra information about html elements, all HTML elements can have attributes.-->
+    <img src='logo.jpg' width='200' height='200' alt='India Logo'/><!-- Here src is the attribute,and img is a self closing tag.-->
+    <!--The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+    The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).-->
+    <a href=='https://google.com'><!--This tag is used to create hyperlinks to other pages, here 'href' attribute on clicking on text
+        which page to redirect to .-->
+        Google
+    </a>
+    <a href='contact.html' target=='_blank'>Contacts</a> <!-- Another common attribute with anchor tag {<a>} is target attribute, here target='_blank' open page in new tab. -->
+    <!-- Next we have table tag , which is used to display rows of data in webpages, which uses multiple nested elements.-->
+    <table>
+        <thead>
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2 </td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5 </td>
+                <td>Data 6</td>
+            </tr>
+            <tr>
+                <td>Data 7</td>
+                <td>Data 8 </td>
+                <td>Data 9</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Till now we have displaying data to the user, next we have 'form' to collect data from the user like in registration form.-->
+    <form>
+        <label for='username ''>User Name</label> <!-- label tag for displaying input label.-->
+        <br>
+        <input type='text' id='username'/> <!-- Input element to accept some text, which is the default type,  it is a self closing text, here good practice is tying input element with label
+        for which use 'id' attribute in 'img' tag and 'for' attribute in 'label' tag, what it will do is when we click on label 
+        it will autofocus on 'input' element .--> 
+        <br>
+        <label for='about'>About You</label>
+        <br>
+        <textarea id='about'></textarea> <!-- To collect larger data of text.-->
+        <br />
+        <label for='country'>Country</label>
+        <br />
+        <select id='country'>
+            <option value='india'>India</option>
+            <option value='uae'>UAE</option>
+            <option value='singapore'>Singapore</option>
+        </select>
+        <br>
+        <!-- Here 'radio' type is for seelcting a single piece of value either 'parttime' OR 'fulltime' here , but in case of 'checkbox' type we can select both the values.-->
+        <label>Job Type</label>
+        <br>
+        <input type='radio' name='jobtype' value='parttime' id='parttime'/> <!-- 'name' attribute is here which will be sent to the server.-->
+        <label for='parttime'>Part Time</label>
+        <br>
+        <input type='radio' name='jobtype' value='fulltime' id='fulltime'/> <!-- 'name' attribute is here which will be sent to the server.-->
+        <label for='fulltime'>Full Time</label>
+        <br>
+        <br> 
+        <label>Job Type</label>
+        <br>
+        <input type='checkbox' name='jobtype' value='parttime' id='parttime'/> <!-- 'name' attribute is here which will be sent to the server.-->
+        <label for='parttime'>Part Time</label>
+        <br>
+        <input type='checkbox' name='jobtype' value='fulltime' id='fulltime'/> <!-- 'name' attribute is here which will be sent to the server.-->
+        <label for='fulltime'>Full Time</label>
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+  </body> 
+</html> 
